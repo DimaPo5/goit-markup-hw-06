@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- шапка сайту -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <!-- логотип і навігація -->
+          <a href="./index.html" class="logo">Web<span class="nav-logo">Studio</span> </a>
+
+          <ul class="site-navigation list">
+            <li><a href="./index.html" class="link">Студія</a></li>
+            <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-contact list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="mail-icon" width="16" height="12">
+                <use href="./image/icons.svg#icon-mail"></use>
+              </svg>
+
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">
+              <svg class="tel-icon" width="10" height="16">
+                <use href="./image/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section content-section">
+        <div class="container">
+          <h1 class="visually-hidden">Контент</h1>
+          <ul class="content-filter list">
+            <li><button type="button" class="filter-btn btn-current">Усі</button></li>
+            <li><button type="button" class="filter-btn">Веб-сайти</button></li>
+            <li><button type="button" class="filter-btn">Додатки</button></li>
+            <li><button type="button" class="filter-btn">Дизайн</button></li>
+            <li><button type="button" class="filter-btn">Маркетинг</button></li>
+          </ul>
+          <ul class="content-item list">
+            <li class="project-items">
+              <div class="studio-top-wrap">
+                <img src="./image/portfolio/comp-min.jpg" alt="Технокряк" width="370" height="294" />
+                <p class="studio-top-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+
+              <div class="content-wrap">
+                <h2 class="content-title content-title">Технокряк</h2>
+                <p class="content-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <div class="studio-top-wrap">
+                <img src="./image/portfolio/basket-min.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" />
+                <p class="studio-top-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="content-wrap">
+                <h2 class="content-title">Постер New Orlean vs Golden Star</h2>
+                <p class="content-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/seafood-min.jpg" alt="Ресторан Seafood" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Ресторан Seafood</h2>
+                <p class="content-text">Додаток</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/headphones-min.jpg" alt="Проєкт Prime" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Проєкт Prime</h2>
+                <p class="content-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/box-min.jpg" alt="Проєкт Boxes" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Проєкт Boxes</h2>
+                <p class="content-text">Додаток</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/compp-min.jpg" alt="Inspiration has no Borders" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Inspiration has no Borders</h2>
+                <p class="content-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/book-min.jpg" alt="Видання Limited Edition" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Видання Limited Edition</h2>
+                <p class="content-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/tag-min.jpg" alt="Проєкт LAB" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Проєкт LAB</h2>
+                <p class="content-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img src="./image/portfolio/compik-min.jpg" alt="Growing Business" width="370" height="294" />
+              <div class="content-wrap">
+                <h2 class="content-title">Growing Business</h2>
+                <p class="content-text">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container contact">
+        <div class="adr-container">
+          <a class="logo" href="./index.html"> Web<span class="footer-logo">Studio</span></a>
+          <!-- адреса і контакти -->
+
+          <address>
+            <ul class="list">
+              <li>
+                <a href="https://goo.gl/maps/VgpdDLuRD4vqMxRU8" target="_blank" rel="noopener noreferrer nofollow" class="footer-address"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="adr-footer"><a href="mailto:info@devstudio.com" class="footer-cont">info@devstudio.com</a></li>
+              <li class="adr-footer"><a href="tel:+380961111111" class="footer-cont">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-social-cont">
+          <h3 class="text-title">приєднуйтесь</h3>
+          <ul class="list join-team">
+            <li class="social-box">
+              <a href="" class="icon-join-team">
+                <svg class="social-icon" width="20" height="20">
+                  <use xlink:href="./image/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-box">
+              <a href="" class="icon-join-team">
+                <svg class="social-icon" width="20" height="20">
+                  <use xlink:href="./image/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-box">
+              <a href="" class="icon-join-team">
+                <svg class="social-icon" width="20" height="20">
+                  <use xlink:href="./image/icons.svg#icon-faceboock"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-box">
+              <a href="" class="icon-join-team">
+                <svg class="social-icon" width="20" height="20">
+                  <use xlink:href="./image/icons.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
