@@ -88,7 +88,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-color);
-  transition: var(--cubic-bazier);
+  transition: color 250ms var(--cubic-bazier);
 }
 .site-navigation .link:hover,
 .site-navigation .link:focus,
@@ -127,7 +127,7 @@ img {
   content: '';
   position: absolute;
   left: 0;
-  top: 30.5px;
+  top: 31px;
   display: block;
   width: 100%;
   height: 4px;
@@ -329,7 +329,7 @@ img {
   justify-content: center;
   align-content: center;
   background-size: 20px;
-  transition: var(--cubic-bazier);
+  transition: background-color 250ms var(--cubic-bazier), fill 250ms var(--cubic-bazier);
 }
 
 .icon-join-team:focus,
@@ -400,23 +400,20 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: var(--cubic-bazier);
-}
-.client-soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms var(--cubic-bazier), border 250ms var(--cubic-bazier);
 }
-.client-soc-icon:hover,
+/* .client-soc-icon {
+  fill: #afb1b8;
+} */
+/* .client-soc-icon:hover,
 .client-soc-icon:focus {
   fill: var(--third-color);
-}
+} */
 .client-soc-link:hover,
 .client-soc-link:focus {
-  border-color: var(--third-color);
-  transition: var(--cubic-bazier);
-}
-.client-soc-link:hover .client-soc-icon,
-.client-soc-link:focus .client-soc-icon {
-  border-color: var(--third-color);
+  fill: var(--third-color);
+  border: 1px solid var(--third-color);
 }
 
 .footer .logo {
@@ -443,6 +440,7 @@ img {
   text-decoration: none;
   line-height: 1.71;
   font-style: normal;
+  transition: color 250ms var(--cubic-bazier);
 }
 
 .contact {
@@ -514,6 +512,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 6px 25px;
+  transition: background-color 250ms var(--cubic-bazier), box-shadow 250ms var(--cubic-bazier);
 }
 .btn-current {
   background-color: var(--third-color);
@@ -575,7 +574,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   transform: translateY(100%);
-  transition-property: 250ms var(--cubic-bazier);
+  transition: transform 250ms var(--cubic-bazier);
 }
 
 .project-items:hover .studio-top-text {
@@ -589,6 +588,7 @@ img {
   border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
   cursor: pointer;
+  transition: box-shadow 250ms var(--cubic-bazier);
 }
 .project-items:hover,
 .project-items:focus {
@@ -607,7 +607,7 @@ img {
   width: 100vw;
   height: 100vh;
 
-  transition: opacity 500ms, visibility 500ms var(--cubic-bazier);
+  transition: opacity 500ms var(--cubic-bazier), visibility 500ms var(--cubic-bazier);
 }
 
 .backdrop.is-hidden {
@@ -628,9 +628,8 @@ img {
   top: 50%;
   left: 50%;
 
-  transition: transform 500ms;
   transform: translate(-50%, -50%);
-
+  transition: transform 250ms var(--cubic-bazier);
   background-color: var(--write-color);
 }
 
