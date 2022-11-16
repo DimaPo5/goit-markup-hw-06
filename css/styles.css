@@ -291,7 +291,8 @@ img {
   gap: 30px;
 }
 
-.footer .text-title {
+.footer .text-title,
+.subscribe-title {
   color: var(--write-color);
   text-transform: uppercase;
   font-size: 14px;
@@ -792,4 +793,49 @@ img {
 }
 .form-btm:hover {
   background-color: #188ce8;
+}
+
+.form-foot {
+  display: flex;
+}
+.foot-mail {
+  width: 358px;
+  height: 50px;
+  background-color: var(--color-fon);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.subscribe-cont {
+  width: 570px;
+  margin-left: 93px;
+}
+.foot-mail:focus {
+  outline: none;
+}
+.foot-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 0;
+
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+  cursor: pointer;
+  min-height: 43px;
+  margin-left: 12px;
+}
+.foot-svg {
+  fill: var(--write-color);
+  margin-left: 10px;
 }
